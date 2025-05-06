@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BanDownLab Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-content">
+            <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
+            <div class="cookie-buttons">
+                <button id="acceptCookies">Accept</button>
+                <button id="declineCookies">Decline</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Splash Screen -->
+    <div class="splash" id="splash">
+        <div class="splash-content">
+            <h1 class="splash-title">BanDownLab</h1>
+            <div class="cube-container">
+                <div class="cube">
+                    <div class="face front"></div>
+                    <div class="face back"></div>
+                    <div class="face right"></div>
+                    <div class="face left"></div>
+                    <div class="face top"></div>
+                    <div class="face bottom"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Dashboard -->
+    <div class="dashboard" id="dashboard">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">BanDownLab</h1>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#" class="nav-link">Home</a></li>
+                        <li><a href="#" class="nav-link">About</a></li>
+                        <li><a href="#" class="nav-link">Services</a></li>
+                        <li><a href="#" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <div class="welcome-content">
+                <div class="welcome-text">
+                    <h2>Welcome to <span>BanDownLab</span></h2>
+                    <p>Innovative solutions for the digital age. Explore our tools and services to enhance your online experience.</p>
+                    <button class="cta-button">Get Started</button>
+                </div>
+                <div class="welcome-image">
+                    <img src="https://via.placeholder.com/400x300" alt="BanDownLab Illustration" class="floating">
+                </div>
+            </div>
+        </section>
+
+        <!-- Installations Section -->
+        <section class="installations-section">
+            <h2 class="section-title">Installations</h2>
+            <div class="installations-grid">
+                <div class="installation-card" onclick="window.open('https://example.com/tool1', '_blank')">
+                    <div class="card-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Speed Optimizer</h3>
+                    <p>Boost your system performance with our advanced optimization tools.</p>
+                    <div class="card-hover"></div>
+                </div>
+                <div class="installation-card" onclick="window.open('https://example.com/tool2', '_blank')">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security Suite</h3>
+                    <p>Comprehensive protection against all types of digital threats.</p>
+                    <div class="card-hover"></div>
+                </div>
+                <div class="installation-card" onclick="window.open('https://example.com/tool3', '_blank')">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics Pro</h3>
+                    <p>Advanced analytics to track and improve your digital presence.</p>
+                    <div class="card-hover"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio-section">
+            <h2 class="section-title">Our Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/500x300" alt="Project 1">
+                        <div class="portfolio-overlay">
+                            <h3>Digital Transformation</h3>
+                            <p>Revolutionary platform for business automation</p>
+                            <button class="view-button">View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/500x300" alt="Project 2">
+                        <div class="portfolio-overlay">
+                            <h3>AI Solutions</h3>
+                            <p>Artificial intelligence for everyday problems</p>
+                            <button class="view-button">View Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <h2 class="section-title">Contact Support</h2>
+            <form id="supportForm" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>BanDownLab</h3>
+                    <p>Innovating the future</p>
+                </div>
+                <div class="footer-links">
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-patreon"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="legal-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 MicroByte | BanDownLab Studio. All rights reserved</p>
+            </div>
+            <div class="lab-flask"></div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+          </html>
